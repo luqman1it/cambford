@@ -1,0 +1,77 @@
+{
+  "home": "Home",
+  "news": "News",
+  "courses": "Courses",
+  "header-about": "About",
+  "verifyCertificate": "Certificates",
+  "siteLogoAlt": "Site logo",
+  "title": "Site Title",
+
+  "section1Title": "Welcome to Cambford Intl College – The Future of Online Education",
+  "section1Text": "At Cambford Intl College, we are redefining learning for the digital age. Our e-learning platform offers high-quality, affordable, and flexible education designed to empower students worldwide.",
+
+  "section2Title": "Empowering Learners Everywhere – Flexible, Affordable, and Innovative",
+  "section2Text": "Whether you’re looking to advance your career, gain new skills, or pursue academic excellence, our programs and courses are built to fit your goals and schedule.",
+
+  "section3Title": "Start your learning journey today",
+  "section3Text": "Education should not be limited by borders — and neither should your ambitions. Learn from expert instructors and join a global community of learners.",
+
+  "textSlide1": "Inspiring minds, shaping futures",
+  "textSlide2": "Where knowledge meets opportunity",
+  "textSlide3": "Your journey to excellence begins here",
+
+  "securityBrand": "Security & Brand",
+  "privacyPolicy": "privacy Policy",
+  "termsConditions": "Terms and Conditions",
+  "support": "Support",
+  "contact": "Contact",
+
+  "feedbakClient1": "My experience with Cambford Intl College has been excellent. The platform is easy to use, and the lessons are well organized and professional. What I liked most is how responsive the instructors are — it really feels like studying at a real university, even though it’s all online.",
+  "feedbakClient2": "At first, I was hesitant because I had never enrolled in an online college before, but after joining the Business Management course, I was truly impressed by the quality of the content. The certificates are recognized by reputable institutions, and the video lessons are clear and practical. I highly recommend it to anyone looking to grow professionally.",
+  "feedbakClient3": "The platform offers solid academic content, it was a valuable experience — the instructors are highly qualified, especially in English language and e-learning programs.",
+  "allCategory": "all",
+  "programsCategory": "programs",
+  "coursesCategory": "courses",
+  "headCourse": "Our Courses",
+  "subTitle": "Browse our available courses or use search and filters to find more.",
+  "placeHolderCourse": "Search for courses...",
+  "placeholderNews": "Search for news...",
+  "about": {
+    "whoWeAre": {
+      "title": "Who We Are",
+      "text": "Cambford International College Ltd is a private limited company registered in England and Wales (Company No. 16730023). Established in 2025, the College is committed to providing high-quality, accessible, and globally recognized education through modern digital learning environments."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To become a leading international institution that empowers learners worldwide with knowledge, skills, and innovation—bridging the gap between education and the evolving demands of the global workforce."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "Our mission is to deliver flexible, affordable, and accredited programs that combine academic excellence with practical expertise. We aim to foster intellectual curiosity, ethical leadership, and lifelong learning for students across the globe."
+    },
+    "values": {
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence:",
+        "text": "We strive for the highest standards in teaching, research, and student experience."
+      },
+      "integrity": {
+        "title": "Integrity:",
+        "text": "We uphold transparency, fairness, and respect in all our operations."
+      },
+      "innovation": {
+        "title": "Innovation:",
+        "text": "We embrace new technologies and learning methods to create a dynamic educational environment."
+      },
+      "diversity": {
+        "title": "Diversity:",
+        "text": "We welcome students and staff from all backgrounds, celebrating multiculturalism and inclusivity."
+      }
+    },
+    "registered": {
+      "title": "Registered Details",
+      "text": "Cambford International College Ltd Registered in England and Wales under the Companies Act 2006. Company Number: 16730023."
+    },
+    "imageAlt": "College Certification"
+  }
+}

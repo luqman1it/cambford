@@ -1,0 +1,27 @@
+/* للأجهزة اللوحية (Tablet) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* للشاشات المتوسطة (مثل iPad Mini أو الهواتف الكبيرة) */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* للهواتف الصغيرة */
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* للهواتف الصغيرة جدًا (مثل iPhone SE) */
+@media (max-width: 360px) {
+  html {
+    font-size: 12px;
+  }
+}

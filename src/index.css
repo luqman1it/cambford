@@ -1,0 +1,57 @@
+/* global rules */
+:root {
+  --text-color: #222;
+  --bg: #fff;
+  --color-primary: #a61b32;
+  --gap: 1rem;
+  --muted: #6b7280;
+  --radius: 8px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif; /* الافتراضي للإنجليزية */
+  transition: font-family 0.3s ease;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bg);
+}
+html[lang="ar"] {
+  font-family: "Tajawal", sans-serif;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.m-t {
+  margin-top: 30px;
+}
+.m-b {
+  margin-bottom: 30px;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* direction افتراضي: يُدار أيضاً عبر document.documentElement.dir */
+html[dir="rtl"] {
+  direction: rtl;
+}
+html[dir="ltr"] {
+  direction: ltr;
+}
+
+/* روابط - تحسين الافتراضي */
+a {
+  color: inherit;
+}

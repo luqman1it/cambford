@@ -1,0 +1,113 @@
+/* ===========================
+   FOOTER BASE STYLES
+=========================== */
+.footer {
+  background-color: #0e0e0e;
+  color: #8996a0;
+  padding: 64px 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+/* Footer Layout Container */
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ===========================
+   TOP SECTION
+=========================== */
+.footer__main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 2rem;
+}
+
+/* Footer Column (each section) */
+.footer__column {
+  min-width: 200px;
+}
+
+/* Footer Section Titles */
+.footer__title {
+  color: #f3f4f4;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Footer Links List */
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__item {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+}
+
+.contact-nav .footer__item:hover {
+  color: #f3f4f4;
+  cursor: pointer;
+}
+
+/* ===========================
+   SOCIAL LINKS
+=========================== */
+.footer__social {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===========================
+   LOGOS SECTION
+=========================== */
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logos {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__logos img {
+  width: 8rem;
+  height: auto;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+@media (max-width: 768px) {
+  .footer__main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__social {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__logos {
+    flex-direction: column;
+  }
+}

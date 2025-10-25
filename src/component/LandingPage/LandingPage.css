@@ -1,0 +1,134 @@
+.landingPage {
+  width: 100%;
+  height: calc(100vh - 62px);
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+}
+
+.slides-container {
+  position: relative;
+  height: 100%;
+}
+
+/* ✅ تحسين الحركة لتكون سلسة وطبيعية */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.05) translateX(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  z-index: 1;
+}
+
+/* ✅ النص فوق الصورة */
+.slide-text {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 80%;
+  animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 30px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.slide-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* ✅ الأسهم */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  opacity: 0.7;
+  z-index: 10;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.arrow:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow.left {
+  left: 30px;
+}
+
+.arrow.right {
+  right: 30px;
+}
+
+/* ✅ تجاوب التصميم */
+@media (max-width: 1024px) {
+  .slide-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .arrow {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .landingPage {
+    height: 70vh;
+  }
+
+  .slide-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .arrow {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landingPage {
+    height: 60vh;
+  }
+
+  .slide-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .arrow {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,176 @@
+.news-section {
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+  font-family: "Poppins", sans-serif;
+}
+
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ✅ مربع البحث */
+.news-search {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.news-search-input {
+  width: 100%;
+  padding: 0.9rem 3rem 0.9rem 1.2rem;
+  border-radius: 50px;
+  border: 2px solid #a61b32;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.news-search-input:focus {
+  border-color: #a61b32;
+  box-shadow: 0 0 0 3px rgba(166, 27, 50, 0.25);
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a61b32;
+  font-size: 1.4rem;
+}
+
+/* ✅ شبكة الأخبار */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ✅ بطاقة الخبر */
+.news-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.news-card__image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.news-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.news-card:hover .news-card__image {
+  transform: scale(1.05);
+}
+
+.news-card__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.news-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #a61b32;
+}
+
+.news-card__date {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.news-card__description {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.6;
+  white-space: normal;
+}
+
+/* ✅ أول خبر مميز */
+.news-card--featured {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.news-card--featured .news-card__image-wrapper {
+  flex: 1 1 50%;
+  height: auto;
+}
+
+.news-card--featured .news-card__content {
+  flex: 1 1 50%;
+  padding: 2rem;
+}
+
+/* ✅ pagination */
+.pagination {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-btn {
+  background-color: #a61b32;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #861026;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* ✅ تجاوب */
+@media (max-width: 992px) {
+  .news-card--featured {
+    grid-column: span 1;
+    flex-direction: column;
+  }
+
+  .news-card__image-wrapper {
+    height: 200px;
+  }
+}

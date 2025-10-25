@@ -1,0 +1,132 @@
+:root {
+  --color-primary: #a61b32;
+  --text-color: #333;
+  --max-width: 1200px;
+}
+
+.home .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+/* 💫 Animation إعدادات */
+.box-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 60px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.box-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* عند كل ظهور عكسي نضيف حركة لطيفة من الاتجاه الآخر */
+.box-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.box-content.reverse:not(.visible) {
+  transform: translateY(40px) translateX(-20px);
+}
+
+/* الصور */
+.image-box {
+  width: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.6s ease;
+}
+
+.image-box:hover {
+  transform: scale(1.03);
+}
+
+/* النصوص */
+.details {
+  width: 50%;
+  color: var(--text-color);
+}
+
+.details h2 {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.details p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #444;
+  font-weight: 600;
+}
+
+/* 🎯 تأثير مختلف للتدرج عند الظهور */
+.box-content.visible .image-box {
+  animation: fadeInRight 1s ease forwards;
+}
+
+.box-content.reverse.visible .image-box {
+  animation: fadeInLeft 1s ease forwards;
+}
+
+/* 🔸 Keyframes */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 📱 استجابة الشاشات الصغيرة */
+@media (max-width: 1080px) {
+  .box-content,
+  .box-content.reverse {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .image-box,
+  .details {
+    width: 100%;
+  }
+
+  .details h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .details p {
+    text-align: center;
+  }
+}
