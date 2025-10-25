@@ -6,7 +6,7 @@ import NavMenu from "../NavMenu";
 import LanguageSwitch from "../LanguageSwitch";
 import SocialLinks from "../SocialLinks";
 
-const logoSrc = "/logo.png";
+const logoSrc = "/cambford/logo.png";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
